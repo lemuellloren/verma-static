@@ -1,0 +1,110 @@
+// Header Styles 
+#nav {
+    height: 80px;
+    background-color: yellow;
+    max-height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .logo {
+    &__img {
+      width: 180px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  .bag {
+    text-align: right;
+    &__icon {
+      width: $menu-icon-size;
+      height: $menu-icon-size;
+    }
+  }
+  
+  .mobile-menu {
+    transition: margin-left .5s;
+    &__row {
+      height: 80px;
+      max-height: 80px;
+      background-color: $tertiary-color;
+    }
+  }
+  
+  .hamburger-menu {
+    &__icon {
+      font-size: $menu-icon-size;
+    }
+  }
+  
+  
+  .mobile-menu-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  
+    &__img {
+      width: 60px;
+      height: auto;
+    }
+  }
+  
+  .close-nav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 30px;
+  }
+  
+  .sidebar-menu {
+    background-color: $body-bg-color;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar-menu {
+    &__ul {
+      list-style: none;
+      padding: 0 50px;
+      text-align: center;
+      font-size: $body-size-lg;
+    }
+  
+    &__li {
+      padding: 10px 0;
+      border-bottom: $border;
+    }
+  }
+  
+  
+  // *Desktop Menu 
+  .desktop-menu {
+    &__ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    &__menus {
+      color: #443636;
+      font-weight: 500;
+      font-size: $body-size;
+      text-decoration: none;
+      display: block;
+      padding: 0.7rem 1rem;
+      position: relative;
+      border-bottom: 2px solid transparent;
+    }
+  }
+  
