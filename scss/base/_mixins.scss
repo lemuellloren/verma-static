@@ -1,0 +1,138 @@
+// TODO: Media Queries 
+// *Tablet 
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+// *Desktop 
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// *Flexbox 
+@mixin middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// *Buttons
+@mixin default-button {
+  color: $light-color;
+  font-size: $body-size;
+  line-height: $line-height;
+  border-radius: $border-radius-btn;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: $box-shadow-btn
+}
+
+@mixin primary-button {
+  @include default-button;
+  background-color: $primary-color;
+  transition: $transition;
+
+  &:hover {
+    color: $light-color;
+    background-color: $secondary-color;
+  }
+
+  @include tablet {
+    text-decoration: none;
+  }
+
+  @include desktop {
+    width: 40%;
+  }
+}
+
+// *Typography 
+@mixin header-text {
+  color: $heading-color;
+  line-height: $line-height-heading;
+}
+
+@mixin sub-head {
+  color: $sub-head-color;
+  line-height: $line-height-heading;
+}
+
+@mixin section-title {
+  color: $heading-color;
+  font-size: $header1-size-md;
+  line-height: $line-height-heading;
+  font-weight: 800;
+  text-align: center;
+}
+
+@mixin section-title-desc {
+  color: $body-color-2;
+  font-size: $body-size-md;
+  line-height: $line-height;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
+}
+
+@mixin heading-1 {
+  @include header-text;
+  font-size: $header1-size-sm;
+  font-weight: 900;
+
+  @include tablet {
+    font-size: $header1-size-lg;
+  }
+
+  @include desktop {
+    font-size: $header1-size-lg;
+  }
+}
+
+@mixin sub-head-1 {
+  @include sub-head;
+  font-size: $body-size-lg;
+}
+
+
+// *Layout 
+@mixin section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@mixin benefits-card {
+  position: relative;
+  background-color: $light-color;
+  border-radius: $border-radius-card;
+  min-height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: $box-shadow-card;
+}
+
+@mixin wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 1;
+  pointer-events: none;
+  bottom: -3px;
+}
