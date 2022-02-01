@@ -35,9 +35,15 @@
 @mixin primary-button {
   @include default-button;
   background-color: $primary-color;
+  transition: $transition;
+
+  &:hover {
+    color: $light-color;
+    background-color: $secondary-color;
+  }
 
   @include tablet {
-    width: 40%;
+    text-decoration: none;
   }
 
   @include desktop {
