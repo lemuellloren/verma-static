@@ -49,6 +49,11 @@ h6 {
   background-color: #F6914E;
 }
 
+.section-default {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 #nav {
   height: 80px;
   background-color: yellow;
@@ -169,6 +174,13 @@ h6 {
 .hero-banner .hero-banner-content__subhead {
   margin-top: 1rem;
   text-align: center;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCF4EF;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,3 +32,8 @@ h6 {
 .primary-button {
   @include primary-button;
 }
+
+// *Layout 
+.section-default {
+  @include section ;
+}
