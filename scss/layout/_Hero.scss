@@ -1,8 +1,8 @@
 .hero-banner {
     @include middle;
-    background-color: #f1d4c0;
+    background-color: $tertiary-color;
     padding-top: 80px;
-    height: 90vh;
+    height: 100vh;
     .hero-banner-product {
         &__img {
              width: 300px;
@@ -13,9 +13,16 @@
          }
      }
      .hero-banner-content {
+        padding: 25px;
          &__title {
              text-align: center;
          }
+
+         &__subhead {
+            margin-top: 1rem;
+            text-align: center;
+         }
      }
 }
+
 
