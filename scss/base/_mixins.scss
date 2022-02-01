@@ -53,6 +53,25 @@
   font-size: $header1-size-md;
   line-height: $line-height-heading;
   font-weight: 800;
+  text-align: center;
+}
+
+@mixin section-title-desc {
+  color: $body-color-2;
+  font-size: $body-size-md;
+  line-height: $line-height;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    width: 50%;
+  }
 }
 
 @mixin heading-1 {
@@ -79,4 +98,16 @@
 @mixin section {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+@mixin benefits-card {
+  position: relative;
+  background-color: $light-color;
+  border-radius: $border-radius-card;
+  min-height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: $box-shadow-card;
 }

@@ -2,5 +2,35 @@
     @include middle;
     background-color: $body-bg-color-2;
 
-    
+    .benefits_section-title {
+        margin-bottom: 50px;
+    }
+
+    &__desc-wrap {
+        @include middle;
+        position: absolute;
+        bottom: 0;
+        background-color: $light-color;
+        min-height: 80px;
+        margin: 0;
+        width: 100%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    &__desc {
+        color: $heading-color;
+        font-size: $body-size-lg;
+        line-height: $line-height;
+        text-align: center;
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    &__card {
+        @include benefits-card;
+        margin-bottom: 50px;
+    }
+
+    // background-image: url(./assets/images/benefits/chill.jpg);
 }
