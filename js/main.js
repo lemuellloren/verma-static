@@ -2,13 +2,13 @@
 
 $(document).ready(function () {
     $(document).ready(function () {
-        lottie.loadAnimation({
-            container: document.getElementById('hero-banner-wave'), // the dom element that will contain the
-            animation,
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('hero-banner-wave'),
+            path: './assets/waves/data-color-2.json',
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: './assets/waves/data-color-1.json' // the path to the animation json
+            name: "Waves Animation", 
         });
     });
 

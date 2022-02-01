@@ -126,3 +126,13 @@
   background-repeat: no-repeat;
   box-shadow: $box-shadow-card;
 }
+
+@mixin wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 1;
+  pointer-events: none;
+  bottom: -3px;
+}

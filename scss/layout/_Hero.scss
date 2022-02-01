@@ -12,7 +12,18 @@
     @include middle;
     background-color: $tertiary-color;
     padding-top: 80px;
+    padding-bottom: 80px;
     height: 100vh;
+
+    @include tablet {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    @include desktop {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
 
     .hero-banner-product {
         &__img {
