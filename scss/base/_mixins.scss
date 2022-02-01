@@ -35,6 +35,14 @@
 @mixin primary-button {
   @include default-button;
   background-color: $primary-color;
+
+  @include tablet {
+    width: 40%;
+  }
+
+  @include desktop {
+    width: 40%;
+  }
 }
 
 // *Typography 
@@ -65,6 +73,7 @@
   width: 80%;
   margin: 0 auto;
   padding-top: 20px;
+
   @include tablet {
     width: 50%;
   }

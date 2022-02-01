@@ -77,6 +77,16 @@ h6 {
   box-shadow: 0 22px 21px 0 rgba(0, 0, 0, 0.16);
   background-color: #F6914E;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .primary-button {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .primary-button {
+    width: 40%;
+  }
+}
 
 .section-default {
   padding-top: 80px;
@@ -187,6 +197,16 @@ h6 {
   padding-top: 80px;
   height: 100vh;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-banner__row {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-banner__row {
+    flex-direction: row-reverse;
+  }
+}
 .hero-banner .hero-banner-product__img {
   width: 300px;
   height: auto;
@@ -194,15 +214,45 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-banner .hero-banner-product__img {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-banner .hero-banner-product__img {
+    width: 500px;
+  }
+}
 .hero-banner .hero-banner-content {
   padding: 25px;
 }
 .hero-banner .hero-banner-content__title {
   text-align: center;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-banner .hero-banner-content__title {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-banner .hero-banner-content__title {
+    text-align: left;
+  }
+}
 .hero-banner .hero-banner-content__subhead {
   margin-top: 1rem;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-banner .hero-banner-content__subhead {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-banner .hero-banner-content__subhead {
+    text-align: left;
+  }
 }
 
 .benefits {
