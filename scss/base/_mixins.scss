@@ -48,6 +48,13 @@
   line-height: $line-height-heading;
 }
 
+@mixin section-title {
+  color: $heading-color;
+  font-size: $header1-size-md;
+  line-height: $line-height-heading;
+  font-weight: 800;
+}
+
 @mixin heading-1 {
   @include header-text;
   font-size: $header1-size-sm;

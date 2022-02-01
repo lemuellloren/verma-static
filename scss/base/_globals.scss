@@ -27,6 +27,10 @@ h6 {
   @include sub-head-1
 }
 
+.section-title-heading {
+  @include section-title;
+}
+
 // *Buttons 
 // *Primary Button 
 .primary-button {
