@@ -147,6 +147,9 @@ h6 {
 .hamburger-menu__icon {
   font-size: 30px;
 }
+.hamburger-menu__link {
+  color: #443636;
+}
 
 .mobile-menu-logo {
   display: flex;
@@ -165,17 +168,8 @@ h6 {
   font-size: 30px;
 }
 
-.sidebar-menu {
+.sidebar-menu-container {
   background-color: #faf2ed;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
 }
 
 .sidebar-menu__ul {

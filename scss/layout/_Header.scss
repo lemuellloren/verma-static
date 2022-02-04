@@ -41,6 +41,9 @@
     &__icon {
       font-size: $menu-icon-size;
     }
+   &__link {
+    color: $heading-color;
+    }
   }
   
   
@@ -62,17 +65,8 @@
     font-size: 30px;
   }
   
-  .sidebar-menu {
+  .sidebar-menu-container {
     background-color: $body-bg-color;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
   }
   
   .sidebar-menu {
@@ -98,7 +92,7 @@
       margin: 0;
     }
     &__menus {
-      color: #443636;
+      color: $heading-color;
       font-weight: 500;
       font-size: $body-size;
       text-decoration: none;
