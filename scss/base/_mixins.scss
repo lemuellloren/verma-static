@@ -110,8 +110,12 @@
 
 
 @mixin icon-link {
+  color: $heading-color;
+  text-decoration: none;
   transition: $transition;
+
   &:hover {
+    text-decoration: none;
     color: $secondary-color;
   }
 }

@@ -134,10 +134,14 @@ h6 {
   text-align: right;
 }
 .bag__link {
+  color: #443636;
+  text-decoration: none;
   transition: all ease 0.4s;
   font-size: 25px;
+  margin-left: 10px;
 }
 .bag__link:hover {
+  text-decoration: none;
   color: #2C5E2D;
 }
 .bag__icon {
@@ -159,9 +163,12 @@ h6 {
 }
 .hamburger-menu__link {
   color: #443636;
+  color: #443636;
+  text-decoration: none;
   transition: all ease 0.4s;
 }
 .hamburger-menu__link:hover {
+  text-decoration: none;
   color: #2C5E2D;
 }
 
@@ -190,9 +197,12 @@ h6 {
   margin-top: 80px;
 }
 .sidebar-menu-offcanvas .sidebar-menu__link {
+  color: #443636;
+  text-decoration: none;
   transition: all ease 0.4s;
 }
 .sidebar-menu-offcanvas .sidebar-menu__link:hover {
+  text-decoration: none;
   color: #2C5E2D;
 }
 
