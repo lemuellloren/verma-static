@@ -119,6 +119,9 @@ h6 {
   z-index: 99999999;
 }
 
+.logo {
+  margin-right: 10px;
+}
 .logo__img {
   width: 180px;
   height: auto;
@@ -129,6 +132,13 @@ h6 {
 
 .bag {
   text-align: right;
+}
+.bag__link {
+  transition: all ease 0.4s;
+  font-size: 25px;
+}
+.bag__link:hover {
+  color: #2C5E2D;
 }
 .bag__icon {
   width: 30px;
@@ -149,6 +159,10 @@ h6 {
 }
 .hamburger-menu__link {
   color: #443636;
+  transition: all ease 0.4s;
+}
+.hamburger-menu__link:hover {
+  color: #2C5E2D;
 }
 
 .mobile-menu-logo {
@@ -174,6 +188,12 @@ h6 {
 }
 .sidebar-menu-offcanvas .sidebar-menu {
   margin-top: 80px;
+}
+.sidebar-menu-offcanvas .sidebar-menu__link {
+  transition: all ease 0.4s;
+}
+.sidebar-menu-offcanvas .sidebar-menu__link:hover {
+  color: #2C5E2D;
 }
 
 .sidebar-menu__ul {
@@ -201,6 +221,12 @@ h6 {
   padding: 0.7rem 1rem;
   position: relative;
   border-bottom: 2px solid transparent;
+  transition: all ease 0.4s;
+}
+.desktop-menu__menus:hover {
+  color: #FFFFFF;
+  background-color: #2C5E2D;
+  border-radius: 5px;
 }
 
 .hero-banner {

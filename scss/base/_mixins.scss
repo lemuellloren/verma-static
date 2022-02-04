@@ -109,6 +109,13 @@
 }
 
 
+@mixin icon-link {
+  transition: $transition;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
 // *Layout 
 @mixin section {
   padding-top: 80px;
