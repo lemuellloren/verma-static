@@ -12,7 +12,6 @@ then:
 
 ```sh
 cd coding-challenge-ehrlich
-npm install
 npx sass --watch scss/main.scss css/style.css
 ```
 

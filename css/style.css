@@ -105,7 +105,7 @@ h6 {
   width: 100%;
   opacity: 1;
   pointer-events: none;
-  bottom: -3px;
+  bottom: 0;
 }
 
 #nav {
@@ -119,16 +119,31 @@ h6 {
   z-index: 99999999;
 }
 
+.logo {
+  margin-right: 10px;
+}
 .logo__img {
   width: 180px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .bag {
   text-align: right;
+}
+.bag__link {
+  color: #443636;
+  text-decoration: none;
+  transition: all ease 0.4s;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.bag__link:hover {
+  text-decoration: none;
+  color: #2C5E2D;
 }
 .bag__icon {
   width: 30px;
@@ -143,9 +158,29 @@ h6 {
   max-height: 80px;
   background-color: #f1d4c0;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .hamburger-menu__icon {
   font-size: 30px;
+}
+.hamburger-menu__link {
+  color: #443636;
+  color: #443636;
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+.hamburger-menu__link:hover {
+  text-decoration: none;
+  color: #2C5E2D;
 }
 
 .mobile-menu-logo {
@@ -165,17 +200,21 @@ h6 {
   font-size: 30px;
 }
 
-.sidebar-menu {
+.sidebar-menu-offcanvas {
   background-color: #faf2ed;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  width: 80%;
+}
+.sidebar-menu-offcanvas .sidebar-menu {
+  margin-top: 80px;
+}
+.sidebar-menu-offcanvas .sidebar-menu__link {
+  color: #443636;
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+.sidebar-menu-offcanvas .sidebar-menu__link:hover {
+  text-decoration: none;
+  color: #2C5E2D;
 }
 
 .sidebar-menu__ul {
@@ -189,6 +228,9 @@ h6 {
   border-bottom: 1px solid #F6914E;
 }
 
+.desktop-menu {
+  display: none;
+}
 .desktop-menu__ul {
   list-style: none;
   padding: 0;
@@ -203,9 +245,26 @@ h6 {
   padding: 0.7rem 1rem;
   position: relative;
   border-bottom: 2px solid transparent;
+  transition: all ease 0.4s;
+}
+.desktop-menu__menus:hover {
+  color: #FFFFFF;
+  background-color: #2C5E2D;
+  border-radius: 5px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop-menu {
+    display: block;
+  }
 }
 
 .hero-banner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,6 +301,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-banner .hero-banner-product__img {
