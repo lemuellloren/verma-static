@@ -1,4 +1,5 @@
 .hero-banner {
+    position: relative;
     &__row {
         @include tablet {
             flex-direction: row-reverse;
