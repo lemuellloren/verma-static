@@ -65,10 +65,15 @@
     font-size: 30px;
   }
   
-  .sidebar-menu-container {
+  .sidebar-menu-offcanvas {
     background-color: $body-bg-color;
+    width: 80%;
+    .sidebar-menu {
+      margin-top: 80px;
+    }
   }
   
+
   .sidebar-menu {
     &__ul {
       list-style: none;
